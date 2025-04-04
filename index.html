@@ -85,7 +85,7 @@
 
         <div class="service-card">
           <h3>Business Logic Development</h3>
-          <p>Automating workflows, optimizing operations, and ensuring efficient data handling for businesses.</p>
+          <p>Automating workflows, optimizing operations, and ensuring efficient data handling.</p>
           <p>Implementing custom solutions to address unique business challenges and enhance operational efficiency.</p>
         </div>
 
@@ -168,6 +168,7 @@
         <span class="skill">JavaScript</span>
         <span class="skill">PHP</span>
         <span class="skill">Spring Boot</span>
+        <span class="skill">Apache</span>
         <span class="skill">MySQL</span>
         <span class="skill">Mongo DB</span>
         <span class="skill">JAVA</span>
@@ -178,14 +179,24 @@
         <span class="skill">Server Management</span>
         <span class="skill">App Development</span>
         <span class="skill">Web Development</span>
+        <span class="skill">Github</span>
+        <span class="skill">Figma</span>
         <span class="skill">Flutter</span>
       </div>
       <div class="work-history">
-        <div><span>Prospine (Website)</span><span>2024</span></div>
-        <div><span>Donation Platform</span><span>2024</span></div>
-        <div><span>AI Automation Project</span><span>2023</span></div>
-        <div><span>Freelance Web Dev</span><span>2022</span></div>
+        <div class="work-history-entry"><span>Prospine (Website)</span><span>2024–2025</span></div>
+        <div class="work-history-entry"><span>Hisab-Kitab (App)</span><span>2025</span></div>
+        <div class="work-history-entry"><span>Inner-Circle (App) v1–v3</span><span>2023–2025</span></div>
+        <div class="work-history-entry"><span>Bare Linux</span><span>2025</span></div>
+        <div class="work-history-entry"><span>Donation Platform (Web)</span><span>2024–2025</span></div>
+        <div class="work-history-entry"><span>AI Automation Project</span><span>2025</span></div>
+        <div class="work-history-entry"><span>Invenio (Web + App)</span><span>2024</span></div>
+        <div class="work-history-entry"><span>ScholarWeb (Web + App)</span><span>2024</span></div>
+        <div class="work-history-entry"><span>Chat App (Web)</span><span>2024</span></div>
+        <div class="work-history-entry"><span>Bill Track (Web)</span><span>2024</span></div>
+        <div class="work-history-entry"><span>Freelance Web Dev (Other Projects)</span><span>2022–Current</span></div>
       </div>
+
     </div>
   </section>
 
@@ -385,6 +396,9 @@
           <p>BillTrack is a web application designed to streamline business operations by managing customer data,
             tracking dues and bills, sending invoices via email, and automating overdue payment reminders. It's designed
             to help businesses manage their finances more effectively.
+            The platform offers a user-friendly interface, ensuring easy navigation and efficient management of
+            customer information and billing processes.
+
           </p>
         </div>
         <div class="btn-container">
@@ -472,19 +486,27 @@
         </div>
         <div class="content">
           <h3>Restricted Access - Private Projects</h3>
-          <p>I have worked on <strong style="font-size: 28px;">40+</strong> projects in <strong
-              style="font-size: 28px;">3 years</strong>, but I can't showcase them all
-            here as some were developed for
-            clients who preferred to keep the code private. Some were sold along with the complete source code, making
-            them
-            exclusive to the businesses they were built for. While I can't share those publicly, they reflect my
-            expertise in building tailored solutions for business needs.</p>
-          <p>I mostly work for Business, creating Custom Solutions and I am always open to discuss new projects.
-            As Business Projects comes with Unique Complexity and Requirements.
-            <br> Which i love to work on.
-          </p>
+          <div class="conts">
+            <p>
+              Over the past <strong style="font-size: 28px;">3 years</strong>, I’ve completed more than <strong
+                style="font-size: 28px;">40+</strong> projects. While I can't showcase all of them here—due to client
+              confidentiality and full-code ownership transfers they represent my ability to deliver high-quality,
+              custom-built solutions tailored to unique business needs. I primarily specialize in developing custom
+              solutions for businesses, and I’m always open to discussing
+              new
+              projects. Business-oriented work often comes with unique challenges and requirements which I genuinely
+              enjoy
+              tackling.
+              If you’re interested in collaborating on a project, please feel free to reach out. I’m always eager to
+              discuss new opportunities and challenges.
+
+              I’m currently working on multiple projects, both public and private. If you’re interested in collaborating
+              or have a project in mind, please feel free to reach out!
+            </p>
+          </div>
         </div>
         <div class="btn-container" style="margin-bottom: 40px;">
+          <button class="btn" type="button">Contact<i class="fa-solid fa-arrow-up"></i> </button>
           <div class="available btns2">
             <div class="green-dot"></div>
             <p style="color: #000; font-weight: 700;">
@@ -539,6 +561,30 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <div class="circle">.</div>
+      <div class="text">
+        <h1>Tell Me About Your Project!</h1>
+        <p> I'm excited to hear about your project and how I can help bring your vision to life. Whether you're looking
+          to build a new application, enhance an existing system, or need expert advice on your tech stack, I'm here to
+          assist. Let's collaborate to create something amazing!
+
+        <div class="btn-container">
+          <button class="btn" type="button">Contact Me <i class="fa-solid fa-arrow-up"></i></button>
+          <button class="btn" type="button">Hire Me <i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+        </p>
+      </div>
+      <footer>
+        <div class="contexts">
+          <p>&copy; 2024 Sumit Srivastava. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   </section>
   <script>
@@ -617,7 +663,21 @@
       });
     });
 
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
 
+    document.querySelectorAll('.work-history-entry').forEach(el => {
+      observer.observe(el);
+    });
   </script>
 </body>
 
