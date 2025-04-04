@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+    <title>Project - ProSpine</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h3><a href="../index.html"><i class="fa-solid fa-arrow-left"></i> back</a></h3>
+            </div>
+        </nav>
+    </header>
+
+    <section id="projects">
+        <div class="project">
+            <div class="info">
+                <h2>Prospine – Elevating Spinal Health with Precision & Care</h2>
+                <p>Pro Spine – A professionally designed website for a spinal care clinic focused on providing a
+                    seamless
+                    user experience, optimized performance, and a clean, business-oriented interface. Built to enhance
+                    accessibility and engagement while maintaining a professional and trustworthy online presence.
+                </p>
+            </div>
+            <div class="btn-container">
+                <a href="https://prospine.in" target="_blank" class="btn">Live
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+                <button class="btn" type="button"
+                    onclick="window.location.href='https://github.com/Sumit7739/prospine1'">Github <i
+                        class="fa-brands fa-github"></i> </button>
+                <div class="available btns2">
+                    <div class="green-dot"></div>
+                    <p style="color: #000; font-weight: 700;">active development v4.3.1</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-box">
+            <img src="../assets/prospine.png" alt="Pro Spine">
+        </div>
+
+    </section>
+    <section id="info" class="info-section">
+        <div class="info-header">
+            <h2>Explore Prospine</h2>
+            <p>Explore the core features of Prospine and see how it enhances the digital presence of medical
+                professionals. Click on any section to learn more.</p>
+        </div>
+
+        <div class="info-container">
+            <div class="info-navigation">
+                <div class="info-box active" onclick="showContent('overview')">
+                    <h3>Project Overview</h3>
+                    <p>A brief introduction to the project, its purpose, and the problems it aims to solve.</p>
+                </div>
+
+                <div class="info-box" onclick="showContent('features')">
+                    <h3>Key Features</h3>
+                    <p>An outline of the main functionalities and what makes this project unique.</p>
+                </div>
+                <div class="info-box" onclick="showContent('design')">
+                    <h3>Design & UI</h3>
+                    <p>Insights into the user interface, design principles, and user experience considerations.</p>
+                </div>
+                <div class="info-box" onclick="showContent('tech')">
+                    <h3>Technology Stack</h3>
+                    <p>Details on the programming languages, frameworks, and tools used in development.</p>
+                </div>
+                <div class="info-box" onclick="showContent('deployment')">
+                    <h3>Deployment & Hosting</h3>
+                    <p>Information about the hosting environment, deployment process, and performance optimization.</p>
+                </div>
+            </div>
+
+
+            <div class="info-content">
+                <div id="overview" class="content-box">
+                    <h2>Pro Spine - Overview</h2>
+                    <p>
+                        Prospine is a modern and minimal static website designed for a prominent spinal specialist to
+                        professionally present their profile, expertise, and services.
+                        The goal of this project was to create a sleek, mobile-responsive, and informative platform that
+                        builds trust and provides potential patients with all the necessary details at a glance.
+                    </p>
+                    <p>
+                        The website includes sections such as doctor introduction, areas of specialization, treatments
+                        offered, patient testimonials, and contact information all designed to enhance the user
+                        experience and promote credibility.
+                    </p>
+                    <p>
+                        Built with performance and simplicity in mind, Prospine eliminates clutter and focuses on what
+                        matters most: clear communication, fast loading, and elegant visual appeal.
+                    </p>
+
+                    <div class="project-stats">
+                        <span><strong>Duration:</strong> 4 weeks</span>
+                        <span><strong>Client:</strong> Dr. Pranav Kumar</span>
+                        <span><strong>Tools:</strong> HTML, CSS, JS, PHP, MySQL</span>
+                    </div>
+                    <div class="highlight-box">
+                        The goal was to create a professional, responsive, and SEO-optimized website to establish a
+                        digital presence for the clinic and enable patient engagement.
+                    </div>
+
+                </div>
+
+                <div id="features" class="content-box">
+                    <h2>Key Features</h2>
+                    <p>A well-structured platform designed to provide a seamless experience for both patients and
+                        doctors.</p>
+
+                    <div class="feature">
+                        <h3>Patient-Focused Landing Page</h3>
+                        <p>The front-facing interface is designed with simplicity and clarity in mind, ensuring easy
+                            navigation.</p>
+                        <ul>
+                            <li><strong>Comprehensive Spine Health Information:</strong> Educates users with
+                                well-researched medical content.</li>
+                            <li><strong>Intuitive & Clean UI:</strong> Designed to minimize distractions and guide users
+                                efficiently.</li>
+                            <li><strong>Fully Mobile-Responsive:</strong> Ensures accessibility across desktops,
+                                tablets, and smartphones.</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature">
+                        <h3>Seamless Appointment Booking</h3>
+                        <p>The platform simplifies the process of booking consultations, reducing administrative
+                            overhead.</p>
+                        <ul>
+                            <li><strong>Effortless Scheduling:</strong> Patients can book appointments using a simple
+                                online form.</li>
+                            <li><strong>Instant Confirmations:</strong> Users receive immediate feedback on their
+                                booking status.</li>
+                            <li><strong>Real-Time Status Updates:</strong> Patients can track their appointments and
+                                receive notifications.</li>
+                            <li><strong>Doctor’s Backend Management:</strong> Enables efficient tracking and handling of
+                                all appointments.</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature">
+                        <h3>Dedicated Doctor’s Admin Panel</h3>
+                        <p>A powerful backend dashboard that helps doctors and administrative staff manage key aspects
+                            efficiently.</p>
+                        <ul>
+                            <li><strong>Appointment Dashboard:</strong> View, approve, or decline patient requests with
+                                a few clicks.</li>
+                            <li><strong>Blog Management:</strong> Publish informative articles to educate and engage
+                                patients.</li>
+                            <li><strong>Event Management:</strong> Easily announce medical workshops, health seminars,
+                                and other events.</li>
+                            <li><strong>Secure & Role-Based Access:</strong> Ensures only authorized personnel can
+                                access or modify data.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="design" class="content-box">
+                    <h2>Design & UI</h2>
+                    <p>The visual presentation of Prospine was crafted with a focus on professionalism, clarity, and
+                        accessibility. Every design decision was made with the end-user in mind.</p>
+
+                    <div class="feature">
+                        <h3>Modern Aesthetic</h3>
+                        <ul>
+                            <li><strong>Clean Layouts:</strong> Minimalist design with well-structured sections to avoid
+                                clutter.</li>
+                            <li><strong>Consistent Color Palette:</strong> Calming medical tones (teal, white)
+                                that reflect trust and expertise.</li>
+                            <li><strong>Typography:</strong> Elegant, easy-to-read fonts to ensure smooth readability
+                                across devices.</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature">
+                        <h3>Responsive & Accessible</h3>
+                        <ul>
+                            <li><strong>Mobile-First Approach:</strong> Built to work flawlessly on smartphones,
+                                tablets, and desktops.</li>
+                            <li><strong>Touch-Friendly Elements:</strong> Buttons and forms are easy to tap on mobile
+                                devices.</li>
+                            <li><strong>Accessibility:</strong> Contrast-optimized design and clear navigation paths for
+                                users of all abilities.</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature">
+                        <h3>User-Centered Experience</h3>
+                        <ul>
+                            <li><strong>Guided User Flow:</strong> Homepage and CTA elements lead users toward booking
+                                an appointment or exploring spine care content.</li>
+                            <li><strong>Feedback Mechanisms:</strong> Confirmation messages and smooth animations for
+                                form submissions and page transitions.</li>
+                            <li><strong>Minimal Distraction:</strong> Content-first strategy with clear emphasis on what
+                                matters most to patients and admins.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tech" class="content-box">
+                    <h2>Technology Stack</h2>
+                    <p>Built with efficiency and simplicity in mind, Prospine leverages a lightweight and scalable stack
+                        tailored for a smooth user and admin experience.</p>
+
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <h3>🖥️ Frontend</h3>
+                            <p><strong>HTML5 & CSS3:</strong> For structured markup and styling, ensuring SEO and
+                                accessibility.</p>
+                            <p><strong>Vanilla JavaScript:</strong> Handles dynamic UI behavior, like navigation, form
+                                transitions, and scroll effects.</p>
+                            <p><strong>Responsive Design:</strong> Built mobile-first to ensure a seamless experience
+                                across all screen sizes.</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <h3>🛠️ Backend</h3>
+                            <p><strong>PHP:</strong> Manages form submissions, content updates, and authentication logic
+                                for the admin panel.</p>
+                            <p><strong>MySQL:</strong> Handles storage and retrieval of appointments, blog entries, and
+                                events with relational integrity.</p>
+                            <p><strong>Security:</strong> Input validation, admin-only access, and basic sanitization
+                                for safe data handling.</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <h3>☁️ Deployment</h3>
+                            <p><strong>Hosting:</strong> Live on a shared server with cPanel for efficient file and
+                                database management.</p>
+                            <p><strong>Deployment Tools:</strong> FTP access and built-in file manager for updates and
+                                content uploads.</p>
+                            <p><strong>Maintenance:</strong> Easy manual version tracking and regular backups ensure
+                                site stability.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="deployment" class="content-box">
+                    <h2>Deployment & Hosting</h2>
+                    <p>Prospine’s deployment is designed with reliability, scalability, and user accessibility in mind.
+                        Here’s how it’s been implemented:</p>
+
+                    <div class="deployment-grid">
+
+                        <div class="deployment-card" style="--card-color: #fbe4e4;">
+                            <h3>🌐 Hosting Strategy</h3>
+                            <p>The site is hosted on a reliable shared hosting platform with SSL enabled, ensuring
+                                secure and fast access. Backend and frontend are hosted together for streamlined
+                                updates.</p>
+                        </div>
+
+                        <div class="deployment-card" style="--card-color: #e3f6f5;">
+                            <h3>🔒 Security & Access</h3>
+                            <p>SSL encryption secures all traffic. The admin panel uses role-based access control to
+                                prevent unauthorized entries. Form submissions are validated to block malicious
+                                attempts.</p>
+                        </div>
+
+                        <div class="deployment-card" style="--card-color: #f6f1e9;">
+                            <h3>🧠 Deployment Flow</h3>
+                            <p>Updates are pushed via Git. Upon merging into the main branch, deployment is triggered
+                                manually for control and stability checks before going live.</p>
+                        </div>
+
+                        <div class="deployment-card" style="--card-color: #ede7f6;">
+                            <h3>🚀 Performance & SEO</h3>
+                            <p>Images are optimized, content is lazy-loaded, and the layout is responsive. Meta tags,
+                                alt attributes, and clean URLs improve SEO visibility and ranking.</p>
+                        </div>
+
+                        <div class="deployment-card" style="--card-color: #e1f5fe;">
+                            <h3>🌍 Domain & Availability</h3>
+                            <p>The site uses a custom domain with 99.9% uptime, thanks to DNS optimizations. It includes
+                                robots.txt, sitemap.xml, and is indexed for search engines.</p>
+                        </div>
+                        <div class="deployment-card" style="--card-color: #ffe0f0;">
+                            <h3>📊 Analytics & Monitoring</h3>
+                            <p>Integrated with Google Analytics to track visitor behavior, page views, and engagement.
+                                Monitoring tools notify of downtime or performance dips for quick resolution.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="carousel-section" class="carousel-section">
+        <div class="project-summary">
+            <h2>📌 In Summary</h2>
+            <p>
+                The Prospine project merges functionality with elegance — offering patients a simple, informative
+                experience while equipping doctors with powerful tools to manage their practice.
+                Built with scalability, security, and user experience in mind, Prospine stands as a thoughtful digital
+                solution tailored for modern healthcare needs.
+            </p>
+        </div>
+        <div class="carousel-container inactive">
+            <h3>Desktop</h3>
+            <div class="carousel-track" id="carouselTrack">
+                <img src="prospine/prospine.png" alt="Landing Page">
+                <img src="prospine/prospine2.png" alt="About Page">
+                <img src="prospine/prospine3.png" alt="treatments">
+                <img src="prospine/prospine4.png" alt="services">
+                <img src="prospine/prospine5.png" alt="team">
+                <img src="prospine/prospine6.png" alt="testimonials">
+                <img src="prospine/prospine7.png" alt="events">
+                <img src="prospine/prospine8.png" alt="whyprospine">
+                <img src="prospine/prospine9.png" alt="career">
+                <img src="prospine/prospine10.png" alt="contact">
+                <img src="prospine/prospine11.png" alt="admin">
+                <img src="prospine/prospine12.png" alt="admin2">
+                <img src="prospine/prospine13.png" alt="admin3">
+                <img src="prospine/prospine14.png" alt="admin4">
+                <img src="prospine/prospine15.png" alt="admin5">
+                <img src="prospine/prospine.png" alt="Landing Page">
+            </div>
+        </div>
+
+        <div class="carousel-container mobile inactive">
+            <h3>Mobile</h3>
+            <div class="carousel-track" id="carouselTrack">
+                <img src="prospine/mobile/1.png" alt="Landing Page">
+                <img src="prospine/mobile/2.png" alt="About Page">
+                <img src="prospine/mobile/3.png" alt="treatments">
+                <img src="prospine/mobile/4.png" alt="services">
+                <img src="prospine/mobile/5.png" alt="team">
+                <img src="prospine/mobile/6.png" alt="testimonials">
+                <img src="prospine/mobile/7.png" alt="events">
+                <img src="prospine/mobile/8.png" alt="whyprospine">
+                <img src="prospine/mobile/9.png" alt="career">
+                <img src="prospine/mobile/10.png" alt="contact">
+                <img src="prospine/mobile/11.png" alt="admin">
+                <img src="prospine/mobile/12.png" alt="admin2">
+                <img src="prospine/mobile/13.png" alt="admin3">
+                <img src="prospine/mobile/14.png" alt="admin4">
+                <img src="prospine/mobile/15.png" alt="admin5">
+                <img src="prospine/mobile/1.png" alt="Landing Page">
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <div class="circle-wrapper">
+                <div class="circle"></div>
+            </div>
+            <div class="text">
+                <h1>Tell Me About Your Project!</h1>
+                <p> I'm excited to hear about your project and how I can help bring your vision to life. Whether you're
+                    looking
+                    to build a new application, enhance an existing system, or need expert advice on your tech stack,
+                    I'm here to
+                    assist. Let's collaborate to create something amazing!
+
+                <div class="btn-container">
+                    <button class="btn" type="button" onclick="window.location.href='../contact.html'">Contact Me <i class=" fa-solid
+                fa-arrow-up"></i></button>
+                </div>
+                </p>
+            </div>
+            <footer>
+                <div class="contexts">
+                    <p>&copy; 2025 Sumit Srivastava. All rights reserved.
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="projects.js"></script>
+    <script>
+        
+
+    </script>
+</body>
+
+</html>

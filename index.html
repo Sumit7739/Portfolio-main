@@ -16,10 +16,13 @@
         <h3><a href="index.html">Sumit Srivastava</a></h3>
       </div>
       <div class="links">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#service">Services</a>
+        <a href="#profile">Profile</a>
+        <a href="#process">Process</a>
+        <a href="#projects">Projects</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <div class="available">
@@ -50,7 +53,8 @@
       </div>
 
       <div class="btn-container btn-main">
-        <button class="btn" type="button">Hire Me <i class="fa-solid fa-arrow-up"></i></button>
+        <button class="btn" type="button" onclick="window.location.href='contact.html'">Contact Me <i class=" fa-solid
+          fa-arrow-up"></i></button>
         <button class="btn" type="button" onclick="scrollToProjects()">See My
           Works <i class="fa-solid fa-arrow-down"></i> </button>
       </div>
@@ -117,11 +121,11 @@
         </div>
       </div>
 
-      <div class="btn-container serv">
+      <!-- <div class="btn-container serv">
         <button class="btn" type="button">Contact Me
           <i class="fa-solid fa-arrow-up
           "></i></button>
-      </div>
+      </div> -->
       <br>
     </div>
   </section>
@@ -184,7 +188,7 @@
         <span class="skill">Flutter</span>
       </div>
       <div class="work-history">
-        <div class="work-history-entry"><span>Prospine (Website)</span><span>2024–2025</span></div>
+        <div class="work-history-entry"><span>Prospine (Website)</span><span>2025</span></div>
         <div class="work-history-entry"><span>Hisab-Kitab (App)</span><span>2025</span></div>
         <div class="work-history-entry"><span>Inner-Circle (App) v1–v3</span><span>2023–2025</span></div>
         <div class="work-history-entry"><span>Bare Linux</span><span>2025</span></div>
@@ -237,12 +241,12 @@
         </div>
       </div>
 
-      <div class="btn-container serv">
+      <!-- <div class="btn-container serv">
         <button class="btn" type="button">Contact Me
           <i class="fa-solid fa-arrow-up
           "></i></button>
         <button class="btn" type="button">Hire Me <i class="fa-solid fa-arrow-up"></i></button>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -261,9 +265,11 @@
             accessibility and engagement while maintaining a professional and trustworthy online presence.</p>
         </div>
         <div class="btn-container">
-          <button class="btn" type="button">Explore
+          <button class="btn" type="button" onclick="window.location.href='projects/project-prospine.html'">Explore
             <i class="fa-solid fa-arrow-up"></i></button>
-          <button class="btn" type="button">Github <i class="fa-brands fa-github"></i> </button>
+          <button class="btn" type="button"
+            onclick="window.location.href='https://github.com/Sumit7739/prospine1'">Github <i
+              class="fa-brands fa-github"></i> </button>
           <div class="available btns2">
             <div class="green-dot"></div>
             <p style="color: #000; font-weight: 700;">active development v4.3.1</p>
@@ -506,7 +512,7 @@
           </div>
         </div>
         <div class="btn-container" style="margin-bottom: 40px;">
-          <button class="btn" type="button">Contact<i class="fa-solid fa-arrow-up"></i> </button>
+          <!-- <button class="btn" type="button">Contact<i class="fa-solid fa-arrow-up"></i> </button> -->
           <div class="available btns2">
             <div class="green-dot"></div>
             <p style="color: #000; font-weight: 700;">
@@ -566,7 +572,9 @@
 
   <section id="contact">
     <div class="contact-container">
-      <div class="circle">.</div>
+      <div class="circle-wrapper">
+        <div class="circle"></div>
+      </div>
       <div class="text">
         <h1>Tell Me About Your Project!</h1>
         <p> I'm excited to hear about your project and how I can help bring your vision to life. Whether you're looking
@@ -574,14 +582,15 @@
           assist. Let's collaborate to create something amazing!
 
         <div class="btn-container">
-          <button class="btn" type="button">Contact Me <i class="fa-solid fa-arrow-up"></i></button>
-          <button class="btn" type="button">Hire Me <i class="fa-solid fa-arrow-up"></i></button>
+          <button class="btn" type="button" onclick="window.location.href='contact.html'">Contact Me <i class=" fa-solid
+            fa-arrow-up"></i></button>
+          <!-- <button class="btn" type="button">Hire Me <i class="fa-solid fa-arrow-up"></i></button> -->
         </div>
         </p>
       </div>
       <footer>
         <div class="contexts">
-          <p>&copy; 2024 Sumit Srivastava. All rights reserved.
+          <p>&copy; 2025 Sumit Srivastava. All rights reserved.
           </p>
         </div>
       </footer>
@@ -678,6 +687,44 @@
     document.querySelectorAll('.work-history-entry').forEach(el => {
       observer.observe(el);
     });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          smoothScrollTo(target, 800); // Adjust speed (in ms)
+        }
+      });
+    });
+
+    function smoothScrollTo(target, duration) {
+      const start = window.pageYOffset;
+      const end = target.offsetTop - 100; // Adjust for fixed headers if needed
+      const distance = end - start;
+      let startTime = null;
+
+      function animation(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+
+        window.scrollTo(0, start + distance * easeInOutQuad(progress));
+
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        }
+      }
+
+      function easeInOutQuad(t) {
+        return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      }
+
+      requestAnimationFrame(animation);
+    }
+
+
   </script>
 </body>
 
