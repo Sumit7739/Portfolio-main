@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="hisab-kitab/hisab-kitab.css">
+    <title>Project - Hisab-Kitab</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h3><a href="../index.html"><i class="fa-solid fa-arrow-left"></i> back</a></h3>
+            </div>
+        </nav>
+    </header>
+
+    <section id="projects">
+        <div class="project">
+            <div class="info">
+                <h2>Hisab-Kitab – Simplifying Finances with Clarity & Control</h2>
+                <p>Hisab-Kitab – A thoughtfully crafted platform designed to streamline personal and business financial
+                    management.
+                    Focused on delivering a smooth and intuitive user experience, it combines performance optimization
+                    with a clean,
+                    user-friendly interface. Built to empower users with tools for tracking expenses, budgeting
+                    efficiently, and
+                    gaining financial clarity, all while ensuring a professional and reliable digital presence.
+                </p>
+            </div>
+
+            <div class="btn-container">
+                <a href="https://sumit11.serv00.net/HisabKitab/" target="_blank" class="btn">Live
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+                <button class="btn" type="button"
+                    onclick="window.location.href='https://github.com/Sumit7739/hisab-kitab'">Github <i
+                        class="fa-brands fa-github"></i>
+                </button>
+
+                <button class="btn" type="button"
+                    onclick="window.location.href='https://sumit7739.github.io/hisab-kitab/m/download.html'"> Download
+                    App<i class="fa-solid fa-download"></i> </button>
+                <div class="available btns">
+                    <div class="blue-dot"></div>
+                    <p style="color: #000; font-weight: 700;">stable v2.3.12</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-box">
+            <img src="hisab-kitab/hisab-kitab.png" alt="Hisab-kitab">
+        </div>
+
+    </section>
+    <section id="info" class="info-section">
+        <div class="info-header">
+            <h2>Explore Hisab-Kitab</h2>
+            <p>Discover the core features of Hisab-Kitab and learn how it simplifies financial management for
+                individuals and groups. Click on any section to learn more.</p>
+        </div>
+
+        <div class="info-container">
+            <div class="info-navigation">
+                <div class="info-box active" onclick="showContent('overview')">
+                    <h3>Project Overview</h3>
+                    <p>An introduction to Hisab-Kitab, its purpose, and the financial management challenges it
+                        addresses.</p>
+                </div>
+
+                <div class="info-box" onclick="showContent('features')">
+                    <h3>Key Features</h3>
+                    <p>Highlights of the main functionalities that make Hisab-Kitab a versatile financial management
+                        tool.</p>
+                </div>
+                <div class="info-box" onclick="showContent('design')">
+                    <h3>Design & UI</h3>
+                    <p>Insights into the user interface, design principles, and user experience considerations of
+                        Hisab-Kitab.</p>
+                </div>
+                <div class="info-box" onclick="showContent('tech')">
+                    <h3>Technology Stack</h3>
+                    <p>Details on the technologies and tools used in developing Hisab-Kitab.</p>
+                </div>
+                <div class="info-box" onclick="showContent('deployment')">
+                    <h3>Deployment & Hosting</h3>
+                    <p>Information about the hosting environment, deployment process, and performance optimization of
+                        Hisab-Kitab.</p>
+                </div>
+            </div>
+
+            <div class="info-content">
+                <div id="overview" class="content-box">
+                    <h2>Hisab-Kitab - Overview</h2>
+                    <p>
+                        Hisab-Kitab is a versatile financial management application designed to help users record and
+                        manage their daily transactions, whether tracking personal expenses or managing transactions
+                        with others. The app is accessible via both web and mobile platforms, ensuring convenience for
+                        users across multiple devices.
+                    </p>
+                    <p>
+                        The application offers features such as transaction recording, separate entry categories for
+                        personal and group expenses, cross-device access, and user connections for shared financial
+                        management. These functionalities aim to simplify expense tracking and promote organized
+                        financial activities.
+                    </p>
+                    <p>
+                        In the 2.3 update, a new feature was introduced to support storing client-related information
+                        for
+                        LIC or other insurance purposes. This allows users to log and organize party-specific insurance
+                        details along with related financial transactions — adding another layer of utility for
+                        professionals managing such accounts.
+                    </p>
+
+                    <div class="project-stats">
+                        <span><strong>Client:</strong> Sumit Srivastava</span>
+                        <span><strong>Tools:</strong> PHP, MySQL, HTML, CSS, JavaScript</span>
+                    </div>
+                    <div class="highlight-box">
+                        The goal is to provide a user-friendly, responsive, and secure platform for individuals and
+                        groups to manage their finances effectively.
+                    </div>
+                </div>
+
+
+                <div id="features" class="content-box">
+                    <h2>Key Features</h2>
+                    <p>Hisab-Kitab offers a range of features designed to provide a seamless financial management
+                        experience:</p>
+
+                    <div class="feature">
+                        <h3>Role-Based Access</h3>
+                        <p>Hisab-Kitab supports two primary user roles: <strong>Regular User</strong> and
+                            <strong>Agent</strong>.
+                            Agents are required to enter their agency code during signup, unlocking a specialized
+                            dashboard that enables
+                            them to manage and maintain client-related insurance records efficiently. This system
+                            empowers agents to handle
+                            their LIC or insurance-related data separately from general transactions.
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <h3>Transaction Recording</h3>
+                        <p>Users can record individual transactions as Debit (expenses) or Credit (income), adding
+                            details such as amount, purpose, and associated person.</p>
+                    </div>
+
+                    <div class="feature">
+                        <h3>Separate Entry Categories</h3>
+                        <p>Allows users to track personal daily expenses separately from transactions involving other
+                            individuals, promoting organized financial management.</p>
+                    </div>
+
+                    <div class="feature">
+                        <h3>Cross-Device Access</h3>
+                        <p>The app is accessible seamlessly on web and mobile platforms with a unified account, ensuring
+                            users can manage their finances on the go.</p>
+                    </div>
+
+                    <div class="feature">
+                        <h3>User Connections</h3>
+                        <p>Users can connect with others to share or manage transaction records, granting permissions
+                            for either viewing only or adding transactions.</p>
+                    </div>
+
+                </div>
+
+
+                <div id="design" class="content-box">
+                    <h2>Design & UI</h2>
+                    <p>The design of Hisab-Kitab focuses on simplicity, clarity, and accessibility to enhance user
+                        experience.</p>
+
+                    <div class="feature">
+                        <h3>Clean and Intuitive Interface</h3>
+                        <p>A minimalist design with well-structured sections to avoid clutter, ensuring users can
+                            navigate the app effortlessly.</p>
+                    </div>
+
+                    <div class="feature">
+                        <h3>Consistent Color Palette</h3>
+                        <p>Utilizes a calming color scheme to reflect trust and professionalism, enhancing the visual
+                            appeal of the app.</p>
+                    </div>
+
+                    <div class="feature">
+                        <h3>Responsive Design</h3>
+                        <p>Built with a mobile-first approach, ensuring the app works flawlessly on smartphones,
+                            tablets, and desktops.</p>
+                    </div>
+                </div>
+
+                <div id="tech" class="content-box">
+                    <h2>Technology Stack</h2>
+                    <p>Hisab-Kitab is developed using a robust and scalable technology stack to ensure smooth
+                        performance.</p>
+
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <h3>Frontend</h3>
+                            <p><strong>HTML5 & CSS3:</strong> For structured markup and styling, ensuring a responsive
+                                and accessible interface.</p>
+                            <p><strong>JavaScript:</strong> Handles dynamic UI behavior, enhancing interactivity and
+                                user engagement.</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <h3>Backend</h3>
+                            <p><strong>PHP:</strong> Manages server-side logic, form submissions, and authentication
+                                processes.</p>
+                            <p><strong>MySQL:</strong> Handles storage and retrieval of transaction data with relational
+                                integrity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="deployment" class="content-box">
+                    <h2>Deployment & Hosting</h2>
+                    <p>Hisab-Kitab’s deployment is designed with reliability and user accessibility in mind.</p>
+
+                    <div class="deployment-grid">
+                        <div class="deployment-card" style="--card-color: #fbe4e4;">
+                            <h3>Hosting Strategy</h3>
+                            <p>The app is hosted on a reliable server with SSL enabled, ensuring secure and fast access
+                                for users.</p>
+                        </div>
+
+                        <div class="deployment-card" style="--card-color: #e3f6f5;">
+                            <h3>Security & Access</h3>
+                            <p>SSL encryption secures all data transmissions. The app implements authentication and
+                                authorization mechanisms to protect user data.</p>
+                        </div>
+
+                        <div class="deployment-card" style="--card-color: #f6f1e9;">
+                            <h3>Performance Optimization</h3>
+                            <p>Optimized codebase and database queries ensure fast loading times and smooth user
+                                experience across devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="carousel-section" class="carousel-section">
+        <div class="project-summary">
+            <h2>📌 In Summary</h2>
+            <p>
+                Hisab-Kitab brings clarity and simplicity to personal and shared financial tracking — empowering users
+                to
+                record, organize, and reflect on their daily transactions effortlessly.
+                With a focus on usability, portability, and privacy, Hisab-Kitab is a smart, lightweight solution
+                designed to
+                streamline money management across individuals and small groups alike.
+            </p>
+        </div>
+
+        <div class="carousel-container inactive">
+            <h3>Desktop</h3>
+            <div class="carousel-track" id="carouselTrack">
+                <img src="hisab-kitab/1.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/hisab-kitab.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/2.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/3.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/4.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/5.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/6.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/7.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/8.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/9.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/10.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/11.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/12.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/13.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/14.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/15.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/16.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/17.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/18.png" alt="Hisab-Kitab">
+            </div>
+        </div>
+
+        <div class="carousel-container mobile inactive">
+            <h3>Mobile</h3>
+            <div class="carousel-track" id="carouselTrack">
+                <img src="hisab-kitab/mobile/1.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/2.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/3.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/4.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/5.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/6.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/7.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/8.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/9.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/10.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/11.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/12.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/13.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/14.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/15.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/16.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/17.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/18.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/19.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/20.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/21.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/22.png" alt="Hisab-Kitab">
+                <img src="hisab-kitab/mobile/1.png" alt="Hisab-Kitab">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="diagram">
+        <div class="diagram">
+            <div class="content">
+                <h2>Architecture Diagram</h2>
+                <p>The architecture of Hisab-Kitab is designed to ensure a seamless and efficient user experience across
+                    platforms.</p>
+            </div>
+            <img src="hisab-kitab/Frame.png" alt="Hisab-Kitab Architecture">
+            <div class="content2">
+                <p>The architecture diagram illustrates the interaction between the client-side and server-side
+                    components, showcasing how data flows through the system.</p>
+                <p>It highlights the use of a MySQL database for data storage, PHP for server-side processing, and
+                    JavaScript for client side interactivity. The diagram also emphasizes the role of the web server in
+                    handling requests and serving content to users.</p>
+                <p>This architecture ensures that users can access their financial data securely and efficiently,
+                    whether
+                    they are using the web or mobile version of the application.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <div class="circle-wrapper">
+                <div class="circle"></div>
+            </div>
+            <div class="text">
+                <h1>Tell Me About Your Project!</h1>
+                <p> I'm excited to hear about your project and how I can help bring your vision to life. Whether you're
+                    looking
+                    to build a new application, enhance an existing system, or need expert advice on your tech stack,
+                    I'm here to
+                    assist. Let's collaborate to create something amazing!
+
+                <div class="btn-container">
+                    <button class="btn" type="button" onclick="window.location.href='../contact.html'">Contact Me <i
+                            class=" fa-solid
+                fa-arrow-up"></i></button>
+                </div>
+                </p>
+            </div>
+            <footer>
+                <div class="contexts">
+                    <p>&copy; 2025 Sumit Srivastava. All rights reserved.
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="projects.js"></script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>

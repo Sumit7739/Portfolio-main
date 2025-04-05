@@ -1,0 +1,93 @@
+/* Define animations separately */
+.carousel-track.animate-desktop {
+  animation: scrollCarousel 60s linear infinite;
+}
+
+.carousel-track.animate-desktop:hover {
+  animation-play-state: paused;
+}
+
+.mobile .carousel-track.animate-mobile {
+  animation: scrollCarousels 50s linear infinite;
+}
+
+.mobile .carousel-track.animate-mobile:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollCarousel {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-830%);
+  }
+}
+
+@keyframes scrollCarousels {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-490%);
+  }
+}
+
+#diagram {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.content p {
+  /* border: 1px solid; */
+  min-width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.diagram img {
+  max-width: 80%;
+  height: auto;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.diagram img:hover {
+  margin-bottom: 30px;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.content2 {
+  margin-top: 100px;
+  /* border: 1px solid; */
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.content2 p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
