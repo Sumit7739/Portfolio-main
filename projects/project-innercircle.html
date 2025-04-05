@@ -43,7 +43,22 @@
             }
         }
 
-        .logic-tree {
+        .content p {
+            /* border: 1px solid; */
+            /* max-width: 360px; */
+            margin: 0 auto;
+            font-size: 1.3rem;
+        }
+
+        .boxess {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .boxess .logic-tree {
             width: 800px;
             height: auto;
             max-width: 1200px;
@@ -51,7 +66,49 @@
             display: block;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            margin-bottom: 210px;
+        }
+
+        .boxess .logic-tree:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            margin-bottom: 210px;
+        }
+
+        .boxess h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 20px;
             margin-bottom: 20px;
+            color: #333;
+        }
+
+        .boxess .diagram-image{
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .note-box {
+            max-width: 90%;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background-color: #fdd5bb54;
+            border-left: 6px solid #ff914d;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            /* font-family: 'Segoe UI', sans-serif; */
+        }
+
+        .note-box h3 {
+            margin-top: 0;
+            color: #ff6600;
+            font-size: 1.4em;
+        }
+
+        .note-box p {
+            margin: 10px 0;
+            font-size: 1.3em;
+            color: #333;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -95,6 +152,10 @@
                     <div class="blue-dot"></div>
                     <p>stable v3.4.15</p>
                 </div>
+                <button class="btn" type="button"
+                    onclick="window.location.href='https://github.com/Sumit7739/Inner-Circle'">Old Version v2<i
+                        class="fa-brands fa-github"></i>
+                </button>
             </div>
         </div>
 
@@ -382,17 +443,28 @@
                     for Chai Junction Cafe. It ensures efficient communication between frontend interfaces and backend
                     systems, enabling seamless customer interactions and effective admin management.</p>
             </div>
-            <img src="inner-circle/daigram1.png" alt="Inner-Circle Logic Tree" class="diagram-image logic-tree">
-            <div class="content2">
-                <p>The architecture diagram outlines the structure of Inner-Circle, illustrating how client-side
-                    interfaces interact with server-side logic to deliver a seamless user and admin experience.</p>
-                <p>It showcases the use of PHP for backend processing, MySQL for storing customer and transaction data,
-                    and JavaScript for delivering responsive client-side interactivity. The system is supported by a
-                    secure web server environment, ensuring efficient request handling and content delivery.</p>
-                <p>This architecture is designed to support both the web and mobile versions of the application,
-                    enabling real-time access, loyalty tracking, and management features across all user types.</p>
+            <div class="boxess">
+                <img src="inner-circle/daigram1.png" alt="Inner-Circle Logic Tree" class="diagram-image logic-tree">
+
+                <h2>Simplified user & admin flow for a points-based redemption platform – system-agnostic, modular, and
+                    secure by design.</h2>
+                <img src="inner-circle/diagram-main.png" alt="Inner-Circle Architecture" class="diagram-image">
             </div>
 
+            <div class="note-box">
+                <h3>Note:</h3>
+                <p>
+                    This flowchart does not represent the complete implementation of the system logic or user flow.
+                    The project has been in active development for over <strong>three years</strong>, with <strong>major
+                        annual updates</strong>
+                    introducing a variety of nuanced interactions and system-level refinements.
+                </p>
+                <p>
+                    For the sake of clarity and presentation, I have focused on illustrating the <strong>core logic and
+                        primary interactions</strong>,
+                    keeping the structure simple while still reflecting the underlying architecture.
+                </p>
+            </div>
         </div>
     </section>
     <section id="contact">
