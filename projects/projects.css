@@ -482,8 +482,10 @@ nav {
   margin: 60px auto;
   margin-bottom: 200px;
   width: 95%;
+  /* height: 800px; */
   overflow: hidden;
   border-radius: 16px;
+  /* border: 1px solid; */
   background-color: #f0f4ff;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -514,7 +516,7 @@ nav {
 }
 
 .carousel-track img {
-  height: 500px;
+  height: 600px;
   border-radius: 12px;
   flex-shrink: 0;
   object-fit: cover;
@@ -524,7 +526,7 @@ nav {
 
 /* Define animations separately */
 .carousel-track.animate-desktop {
-  animation: scrollCarousel 120s linear infinite;
+  animation: scrollCarousel 80s linear infinite;
 }
 
 .carousel-track.animate-desktop:hover {
@@ -545,7 +547,7 @@ nav {
   }
 
   100% {
-    transform: translateX(-750%);
+    transform: translateX(-1000%);
   }
 }
 
